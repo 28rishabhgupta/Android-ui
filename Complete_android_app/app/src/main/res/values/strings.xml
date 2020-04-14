@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">On Going Auction</string>
+    <string name="resd"><u>Resend OTP</u></string>
+    <string name="create"><u>Create New Account</u></string>
+    <string name="signup">By tapping <b>“Create Account”</b> you are agreeing to
+        the Terms &amp; Condition.</string>
+    <string name="open">Complete_android_app</string>
+    <string name="close">Complete_android_app</string>
+    <string name="login">Already have an account?<u>Login</u></string>
+    <string name="forget"><u>Forgot Password?</u></string>
+</resources>

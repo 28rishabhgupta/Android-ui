@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/home">
+
+        </item>
+
+        <item
+            android:id="@+id/icon"
+            android:title="Profile"
+            android:icon="@drawable/icon_man">
+
+        </item>
+
+        <item
+            android:id="@+id/bid"
+            android:title="Bid History"
+            android:icon="@drawable/refresh">
+
+        </item>
+
+        <item
+            android:id="@+id/notification"
+            android:title="Notification"
+
+            android:icon="@drawable/notification">
+
+        </item>
+        <item
+            android:id="@+id/notification_pre"
+            android:title="Notification Preferences"
+            android:icon="@drawable/notification">
+
+        </item>
+
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out"
+            android:icon="@drawable/power">
+
+        </item>
+
+    </group>
+</menu>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Change_password"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:src="@drawable/back_button">
+        </ImageView>
+        <TextView
+            android:id="@+id/tempID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="@dimen/_18ssp"
+            android:fontFamily="sans-serif-condensed"
+            android:lineSpacingExtra="@dimen/_20ssp"
+            android:gravity="center_horizontal"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/person_image"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/person"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_40sdp"
+                app:civ_border_color="#FF000000"/>
+        <ImageView
+            android:id="@+id/camera_click"
+            android:onClick="OpenCamera"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:src="@drawable/camera"
+            android:layout_marginLeft="@dimen/_157sdp"
+            android:layout_marginTop="@dimen/_110sdp"
+            tools:ignore="OnClick" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        >
+<ScrollView
+    android:layout_width="match_parent"
+    android:background="@drawable/linear_layout"
+    android:layout_height="@dimen/_280sdp"
+    android:paddingBottom="@dimen/_40sdp"
+
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/edit_round">
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/icon_person"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_20sdp"/>
+            <EditText
+                android:id="@+id/name_ET1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:maxLength="25"
+                android:backgroundTint="@color/Transparent"
+                android:paddingRight="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:hint="Name"
+                android:textSize="@dimen/_16ssp"
+                />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/sname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter the valid name"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@drawable/edit_round">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/vibrate"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/sin_phn_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:backgroundTint="@color/Transparent"
+                    android:hint="Phone no."
+                    android:maxLength="15"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/s_phn_Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter  valid number"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@drawable/edit_round">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/email"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_16ssp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter valid email"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@drawable/edit_round">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/rta"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/RTAET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:hint="RTA File Number"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/RTATV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter RTA Number"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@drawable/edit_round">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/deposit"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/DepoET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:hint="Deposit"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:inputType="phone"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/depoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:text="Enter the RTA number"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+
+                android:paddingBottom="@dimen/_2sdp"
+
+                android:background="@drawable/edit_round">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/lock_2"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+
+                    android:maxLength="15"
+                    android:hint="Password"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/passwordTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:text="Enter the password"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+</ScrollView>
+        <Button
+            android:id="@+id/button"
+            android:onClick="OpenGallery"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_signup"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:text="Choose File"
+            android:textColor="#181817"
+
+            android:layout_marginBottom="@dimen/_8sdp"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button"
+            android:text="No File Chosen"
+            android:textColor="#181817"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Passport*(Minimum 1200*900pixels)"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/signup_submit_button"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Submit"/>
+    <TextView
+        android:id="@+id/signup_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/login"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_3sdp"/>
+
+
+
+
+
+</LinearLayout>
+</layout>

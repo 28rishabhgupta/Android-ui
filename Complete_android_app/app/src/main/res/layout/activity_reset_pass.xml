@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".Change_password"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_8sdp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:src="@drawable/back_button">
+            </ImageView>
+            <TextView
+                android:id="@+id/tempID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="@dimen/_18ssp"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="@dimen/_20sdp"
+                android:gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:src="@drawable/reset"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_30sdp"
+            android:background="@drawable/linear_layout"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:background="@drawable/edit_round">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/lock_2"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:inputType="textEmailAddress"
+                    android:hint="New Password"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_16ssp" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/passwordTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter  valid email"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:visibility="gone"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+
+
+                android:background="@drawable/edit_round">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:src="@drawable/lock_2"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/passwordET1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/Transparent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:maxLength="15"
+                    android:hint="Confirm Password"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/passwordTV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter  valid email"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textColor="#E81111"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Submit"/>
+    </LinearLayout>
+</layout>
